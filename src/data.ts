@@ -11,7 +11,8 @@ export const defaultTodos: GameItem[] = [
     id: "200",
     title: "UFC 5",
     stars: 3,
-    genre: "Sports"
+    genre: "Sports",
+    img: "./images/ufc.png"
   },
   {
     id: "300",

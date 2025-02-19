@@ -3,6 +3,7 @@ export type GameItem = {
     title: string;
     stars: number;
     genre: string;
+    img?: string;
 };
 
 export type NewGameItem = Omit<GameItem, "id">;
