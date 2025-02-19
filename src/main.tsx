@@ -2,21 +2,32 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Games from './components/games'
+
+import Layout from './Layout'
+import HomePg from './HomePg'
+import GamesPg from './GamesPg'
+import InfoPg from './InfoPg'
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>Home Page</div>
-  },
-  {
-    path: "/games",
-    element: <Games/>
-  },
-  {
-    path: "/games/:id",
-    element: <div>Home Page</div>
-  }
+    element: <Layout/>,
+
+    children: [
+      {
+        path: "/",
+        element: <HomePg/>
+      },
+      {
+        path: "/games",
+        element: <GamesPg/>
+      },
+      {
+        path: "/games/:id",
+        element: <InfoPg/>
+      }
+    ]
+  }  
 ])
 
 createRoot(document.getElementById('root')!).render(
