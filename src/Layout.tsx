@@ -1,12 +1,16 @@
-import { Link, Outlet } from 'react-router-dom'
+import { Outlet } from 'react-router-dom'
+import GameNavbar from './components/Navbar'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import GFooter from './components/Footer';
+import GSidebar from './components/Sidebar';
 
 export default function Layout() {
     return (
         <div>
-            <Link to="/"> Home </Link>
-            <Link to='/games'> GAMES </Link>
-            <Link to="/games/:id">Game Info</Link>
+            <GameNavbar/>
+            <GSidebar/>
             <Outlet/>
+            <GFooter/>
         </div>
     )
 }

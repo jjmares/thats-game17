@@ -8,6 +8,8 @@ import HomePg from './HomePg'
 import GamesPg from './GamesPg'
 import InfoPg from './InfoPg'
 
+import "bootstrap/dist/css/bootstrap.min.css";
+
 const router = createBrowserRouter([
   {
     path: "/",

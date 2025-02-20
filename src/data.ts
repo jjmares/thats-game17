@@ -1,6 +1,6 @@
 import { GameItem } from "./types";
 
-export const defaultTodos: GameItem[] = [
+export const defaultGames: GameItem[] = [
   {
     id: "100",
     title: "College Football 25",
