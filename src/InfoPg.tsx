@@ -1,5 +1,10 @@
+import GDetails from "./components/GameDetails";
+
+
 export default function InfoPg() {
     return (
-        <div>Game Info Page</div>
+        <div>DIVE IN!
+        <GDetails/>
+        </div>
     )
 }

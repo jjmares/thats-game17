@@ -40,3 +40,8 @@
 .read-the-docs {
   color: #888;
 }
+
+
+.footer-height {
+  min-height:100px;
+}

@@ -1,10 +1,10 @@
-import GCard from "./components/GameCard";
+import GList from "./components/GameList";
 
 export default function GamesPg() {
     return (
         <div>
             Games Page
-            <GCard/>
+            <GList/>
         </div>
     )
 }
